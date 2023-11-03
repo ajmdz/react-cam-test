@@ -14,6 +14,7 @@ const App = () => {
   const captureImage = () => {
     const imageSrc = webcamRef.current.getScreenshot({ width: 720, height: 720 });
     setCapturedImage(imageSrc);
+    console.log(imageSrc)
   };
 
   return (
